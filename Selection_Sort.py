@@ -1,14 +1,14 @@
 #Python program to perform Selection Sort in Python
 
-def selection_sort(unsorted_list):
-    for i in range(0,len(unsorted_list)-1):
+def selectionSort(unsorted_list):
+    for i in range(0, len(unsortedList)-1):
         smallest=i
-        for j in range(i+1,len(unsorted_list)):
-            if unsorted_list[j]<unsorted_list[smallest]:
+        for j in range(i+1,len(unsortedList)):
+            if unsortedList[j]<unsortedList[smallest]:
                 smallest=j
-        unsorted_list[i], unsorted_list[smallest]=unsorted_list[smallest],unsorted_list[i]
-unsorted_list = input('Enter unsorted numbers : ').split()
-unsorted_list = [int(x) for x in unsorted_list]
-selection_sort(unsorted_list)
+        unsortedList[i], unsortedList[smallest]=unsortedList[smallest],unsortedList[i]
+unsortedList = input('Enter unsorted numbers : ').split()
+unsortedList = [int(x) for x in unsortedList]
+selectionSort(unsortedList)
 
-print(unsorted_list)
+print(unsortedList)
